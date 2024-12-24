@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a502d;
+    color: #fff;
+}
+header img {
+    width: 150px;
+    height: auto;
+}
+.restaurant-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.container {
+    padding: 20px;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.menu-item button {
+    padding: 5px 10px;
+    background-color: #2a502d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu-item button:hover {
+    background-color: #3a603d;
+}
+.bill {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.bill h2 {
+    text-align: center;
+}
+.guest-contact {
+    margin-bottom: 20px;
+}
+.sms-btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #25d366;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.sms-btn:hover {
+    background-color: #20b958;
+}

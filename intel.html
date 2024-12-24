@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDLI TREAT - Billing System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="IDLITreat.png" alt="IDLI TREAT Logo">
+        <h1>IDLI TREAT</h1>
+        <div class="restaurant-info">
+            <p>Address: Madhyamgram, Kolkata</p>
+            <p>Mobile No: 9330350936</p>
+            <p>GST: ***************</p>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <span>Single Idli - ₹15</span>
+            <button onclick="addToOrder('Single Idli', 15)">Add</button>
+        </div>
+        <div class="menu-item">
+            <span>Double Idli - ₹30</span>
+            <button onclick="addToOrder('Double Idli', 30)">Add</button>
+        </div>
+        <!-- Add more menu items as required -->
+        
+        <div class="bill">
+            <h2>Bill Details</h2>
+            <div class="guest-contact">
+                <label for="guest-contact">Guest Contact Number (10 digits):</label>
+                <input type="text" id="guest-contact" placeholder="Enter guest number">
+            </div>
+            <div class="bill-details" id="bill-details"></div>
+            <p>Total (including 5% GST): ₹<span id="total-amount">0</span></p>
+            <button onclick="generateBill()">Generate Bill</button>
+            <a id="sms-link" class="sms-btn" href="#" target="_blank">Send to SMS</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
